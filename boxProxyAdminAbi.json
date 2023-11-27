@@ -1,0 +1,159 @@
+[
+    {
+        "type": "constructor",
+        "stateMutability": "undefined",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "initialOwner"
+            }
+        ]
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "OwnershipTransferred",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "previousOwner",
+                "indexed": true
+            },
+            {
+                "type": "address",
+                "name": "newOwner",
+                "indexed": true
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "changeProxyAdmin",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proxy"
+            },
+            {
+                "type": "address",
+                "name": "newAdmin"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "getProxyAdmin",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proxy"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "address",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getProxyImplementation",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proxy"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "address",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "owner",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "address",
+                "name": ""
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "renounceOwnership",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "transferOwnership",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "newOwner"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "upgrade",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proxy"
+            },
+            {
+                "type": "address",
+                "name": "implementation"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "upgradeAndCall",
+        "constant": false,
+        "stateMutability": "payable",
+        "payable": true,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proxy"
+            },
+            {
+                "type": "address",
+                "name": "implementation"
+            },
+            {
+                "type": "bytes",
+                "name": "data"
+            }
+        ],
+        "outputs": []
+    }
+]
