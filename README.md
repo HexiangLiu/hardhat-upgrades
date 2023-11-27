@@ -1,8 +1,14 @@
-# Sample Hardhat Project
+# Sample Hardhat Upgrades Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Two implementation contract with different version
 
-Try running some of the following tasks:
+1. Box
+2. BoxV2
+
+A proxy contract which will point to Box first, then upgrade to BoxV2
+
+1. hardhat-deploy's built-in proxies
+2. Openzeppelin upgrades plugin
 
 ```shell
 npx hardhat help
